@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Privacy Policy — MyWardrobe</title>
+<style>
+:root {
+  --sfondo: #F6F3EE; --superficie: #FFFFFF; --alternativo: #EAE3D6;
+  --separatore: #D9D3C4; --testo: #1B1B1B; --secondario: #6E6759;
+  --accento: #5C6F55; --tortora: #6B5343;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sfondo: #14130F; --superficie: #1F1D18; --alternativo: #2A2720;
+    --separatore: #39352C; --testo: #F6F3EE; --secondario: #A8A192;
+    --accento: #A7B79E; --tortora: #A98D77;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--sfondo); color: var(--testo);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+h1, h2 { font-family: ui-serif, "New York", Georgia, serif; font-weight: 500; line-height: 1.2; }
+h1 { font-size: 2.1rem; margin: 0 0 8px; }
+h2 { font-size: 1.35rem; margin: 40px 0 12px; }
+p, li { color: var(--testo); }
+a { color: var(--accento); }
+strong { font-weight: 600; }
+.marchio { display: flex; align-items: center; gap: 10px; color: var(--secondario);
+  font-size: .95rem; letter-spacing: .02em; margin-bottom: 28px; text-decoration: none; }
+.marchio b { font-family: ui-serif, "New York", Georgia, serif; font-weight: 500;
+  color: var(--testo); font-size: 1.2rem; }
+.lingue { float: right; font-size: .9rem; }
+.tabella { overflow-x: auto; margin: 16px 0; border: 1px solid var(--separatore);
+  border-radius: 12px; background: var(--superficie); }
+table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: .95rem; }
+th, td { text-align: left; vertical-align: top; padding: 10px 14px;
+  border-bottom: 1px solid var(--separatore); }
+tr:last-child td { border-bottom: none; }
+th { background: var(--alternativo); color: var(--secondario); font-weight: 600; font-size: .85rem; }
+.scheda { background: var(--superficie); border: 1px solid var(--separatore);
+  border-radius: 14px; padding: 20px 22px; margin: 16px 0; }
+.scheda h2 { margin-top: 0; }
+/* Sotto i 560 pixel la tabella diventa una pila di schede: in orizzontale la
+   terza colonna finiva oltre il bordo, e in una pagina legale nessuno scorre
+   di lato per cercarla. */
+@media (max-width: 560px) {
+  .tabella { border: none; background: none; overflow: visible; }
+  table { min-width: 0; }
+  thead { display: none; }
+  tr { display: block; background: var(--superficie); border: 1px solid var(--separatore);
+    border-radius: 12px; padding: 6px 0; margin-bottom: 12px; }
+  td { display: block; border: none; padding: 6px 16px; }
+  td::before { content: attr(data-etichetta); display: block; font-size: .78rem;
+    font-weight: 600; color: var(--secondario); text-transform: uppercase; letter-spacing: .04em; }
+  td:first-child { font-weight: 600; }
+}
+footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--separatore);
+  color: var(--secondario); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+<a class="lingue" href="/mywardrobe-app/privacy/" hreflang="it">Italiano</a>
+<a class="marchio" href="/mywardrobe-app/"><b>MyWardrobe</b></a>
+<h1>Privacy Policy — MyWardrobe</h1>
+<p><strong>Last updated:</strong> 26 September 2026</p>
+<h2>In short</h2>
+<p>MyWardrobe stores photos of your clothes and what you tell it about them. That is personal data and we treat it as such: <strong>only you can see it</strong>, we do not sell it, we do not hand it to anyone for advertising, and there is no tracking inside the app.</p>
+<p>You can take all your data with you whenever you like, and you can delete your account from inside the app: everything disappears, photos included.</p>
+<h2>Who handles your data</h2>
+<p>The data controller is the app's developer, Emanuele Piersanti.</p>
+<p>For any request about your data you can write to <a href="mailto:myticketapp@libero.it">myticketapp@libero.it</a>.</p>
+<h2>What we collect, and why</h2>
+<div class="tabella"><table><thead><tr><th>Data</th><th>Why</th><th>Where it comes from</th></tr></thead><tbody><tr><td data-etichetta="Data">Account identifier</td><td data-etichetta="Why">To keep your wardrobe together and separate from everyone else's</td><td data-etichetta="Where it comes from">Sign in with Apple</td></tr><tr><td data-etichetta="Data">Name</td><td data-etichetta="Why">To greet you on the Home screen. Apple lets you keep it private: the app works anyway</td><td data-etichetta="Where it comes from">Sign in with Apple, or you type it</td></tr><tr><td data-etichetta="Data">City</td><td data-etichetta="Why">To know the weather where you live</td><td data-etichetta="Where it comes from">You type it in your Profile</td></tr><tr><td data-etichetta="Data">Location</td><td data-etichetta="Why">To show you the weather where you are right now</td><td data-etichetta="Where it comes from">Your phone, <strong>only if you allow it</strong></td></tr><tr><td data-etichetta="Data">Garment photos</td><td data-etichetta="Why">They are the wardrobe</td><td data-etichetta="Where it comes from">You take them</td></tr><tr><td data-etichetta="Data">Garment attributes</td><td data-etichetta="Why">Colour, material, season: the suggestions rely on them</td><td data-etichetta="Where it comes from">Automatic recognition, then you correct them</td></tr><tr><td data-etichetta="Data">What you wear and when</td><td data-etichetta="Why">Statistics, and suggestions about what you rarely wear</td><td data-etichetta="Where it comes from">You record it</td></tr><tr><td data-etichetta="Data">Subscription and purchases</td><td data-etichetta="Why">To know whether you are entitled to Premium, until when, and how much credit you bought</td><td data-etichetta="Where it comes from">Apple, after each purchase and at every renewal</td></tr><tr><td data-etichetta="Data">Service usage</td><td data-etichetta="Why">How many requests you made and what they cost, to apply your plan's limits</td><td data-etichetta="Where it comes from">We record it with each request</td></tr></tbody></table></div>
+<p>We do not collect your email address unless Apple gives it to us, we do not ask for your date of birth or your gender, and there is no field that does not serve one of the purposes above.</p>
+<h2>Location, in detail</h2>
+<p>If you allow it, your location is used <strong>once each time you open the app</strong> to ask Apple's weather service for the forecast. <strong>It is never stored</strong>: no table holds it, neither on the device nor on our servers. If you do not allow it, we use the city in your profile. If you have not entered a city, you simply do not see the weather — nothing else happens.</p>
+<h2>Purchases and subscription</h2>
+<p>Payments are handled by <strong>Apple</strong>. We never see your payment method, your billing address or your Apple Account.</p>
+<p>After each purchase Apple confirms to us, with a signed receipt, <strong>what</strong> you bought, <strong>when</strong>, how long the subscription lasts and whether the free trial is running. To link the purchase to your wardrobe, the app gives Apple a random code that identifies your account only within MyWardrobe: it contains neither your name nor any other data.</p>
+<p>When the subscription renews, expires or is refunded, Apple tells us directly, even if the app is closed: so that you are not left without Premium if you paid, and it does not stay on if you were refunded.</p>
+<h2>Who receives it</h2>
+<p>Three providers, each for one thing only:</p>
+<ul><li><strong>Apple</strong> — account sign-in (Sign in with Apple), payments and subscriptions, weather service.</li><li><strong>Supabase</strong> — where the database and the photos live. The servers are in <strong>Ireland</strong>, in the European Union. Photos are kept in private storage: they cannot be reached from a public address, not even by someone who guessed it.</li><li><strong>Anthropic</strong> — the model that recognises garments and suggests outfits and packing lists. It receives the photos of the garments you analyse, a text description of your wardrobe when you ask for a suggestion, and — for packing — the <strong>kind</strong> of trip (work, holiday), the <strong>kind</strong> of destination (city, seaside, mountains), the expected climate and the number of days. <strong>Not the place</strong>, and <strong>it never receives your name, your email or your identifier</strong>. The data sent is not used to train models.</li></ul>
+<p>None of them is an advertiser. There are no advertising or analytics SDKs in the app: you can check this in the privacy manifest Apple publishes on the app's page.</p>
+<h2>How long</h2>
+<p>As long as you keep your account. When you delete it, the data is erased immediately — purchase and usage history included — and there is no bin to recover it from, not even for us.</p>
+<p><strong>Deleting your account does not cancel your subscription.</strong> Billing is handled by Apple: if you have an active subscription, cancel it from your Apple Account settings, otherwise it keeps renewing.</p>
+<p>Garments you mark as archived, sold or given away stay in your history for as long as the account exists: that way outfits and statistics that mention them do not disappear.</p>
+<h2>Your rights</h2>
+<p>You can do these directly from the app, without asking anyone:</p>
+<ul><li><strong>Take your data with you</strong> — Profile → Privacy and data → <em>Export your data</em>. You get a readable file with your profile, garments, outfits and wear history.</li><li><strong>Delete everything</strong> — Profile → Privacy and data → <em>Delete my account</em>.</li><li><strong>Correct</strong> anything: name, city, and every attribute of every garment.</li></ul>
+<p>European law also gives you the right to restrict or object to processing and to lodge a complaint with a data protection authority — in Italy, the Garante per la protezione dei dati personali. To exercise these rights, write to the address above.</p>
+<h2>Children</h2>
+<p>MyWardrobe is not intended for children under 14 and does not knowingly collect their data.</p>
+<h2>If this policy changes</h2>
+<p>The date at the top tells you when. If a change concerned <strong>which</strong> data we collect or <strong>who</strong> receives it, we would tell you inside the app: we would not just quietly change this page.</p>
+<footer>MyWardrobe</footer>
+</main>
+</body>
+</html>

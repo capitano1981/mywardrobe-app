@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>MyWardrobe — Support</title>
+<style>
+:root {
+  --sfondo: #F6F3EE; --superficie: #FFFFFF; --alternativo: #EAE3D6;
+  --separatore: #D9D3C4; --testo: #1B1B1B; --secondario: #6E6759;
+  --accento: #5C6F55; --tortora: #6B5343;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sfondo: #14130F; --superficie: #1F1D18; --alternativo: #2A2720;
+    --separatore: #39352C; --testo: #F6F3EE; --secondario: #A8A192;
+    --accento: #A7B79E; --tortora: #A98D77;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--sfondo); color: var(--testo);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+h1, h2 { font-family: ui-serif, "New York", Georgia, serif; font-weight: 500; line-height: 1.2; }
+h1 { font-size: 2.1rem; margin: 0 0 8px; }
+h2 { font-size: 1.35rem; margin: 40px 0 12px; }
+p, li { color: var(--testo); }
+a { color: var(--accento); }
+strong { font-weight: 600; }
+.marchio { display: flex; align-items: center; gap: 10px; color: var(--secondario);
+  font-size: .95rem; letter-spacing: .02em; margin-bottom: 28px; text-decoration: none; }
+.marchio b { font-family: ui-serif, "New York", Georgia, serif; font-weight: 500;
+  color: var(--testo); font-size: 1.2rem; }
+.lingue { float: right; font-size: .9rem; }
+.tabella { overflow-x: auto; margin: 16px 0; border: 1px solid var(--separatore);
+  border-radius: 12px; background: var(--superficie); }
+table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: .95rem; }
+th, td { text-align: left; vertical-align: top; padding: 10px 14px;
+  border-bottom: 1px solid var(--separatore); }
+tr:last-child td { border-bottom: none; }
+th { background: var(--alternativo); color: var(--secondario); font-weight: 600; font-size: .85rem; }
+.scheda { background: var(--superficie); border: 1px solid var(--separatore);
+  border-radius: 14px; padding: 20px 22px; margin: 16px 0; }
+.scheda h2 { margin-top: 0; }
+/* Sotto i 560 pixel la tabella diventa una pila di schede: in orizzontale la
+   terza colonna finiva oltre il bordo, e in una pagina legale nessuno scorre
+   di lato per cercarla. */
+@media (max-width: 560px) {
+  .tabella { border: none; background: none; overflow: visible; }
+  table { min-width: 0; }
+  thead { display: none; }
+  tr { display: block; background: var(--superficie); border: 1px solid var(--separatore);
+    border-radius: 12px; padding: 6px 0; margin-bottom: 12px; }
+  td { display: block; border: none; padding: 6px 16px; }
+  td::before { content: attr(data-etichetta); display: block; font-size: .78rem;
+    font-weight: 600; color: var(--secondario); text-transform: uppercase; letter-spacing: .04em; }
+  td:first-child { font-weight: 600; }
+}
+footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--separatore);
+  color: var(--secondario); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+<a class="lingue" href="/mywardrobe-app/support/" hreflang="it">Italiano</a>
+<a class="marchio" href="/mywardrobe-app/"><b>MyWardrobe</b></a>
+
+<h1>Support</h1>
+<p>MyWardrobe is your digital wardrobe: you photograph your clothes, the app recognises
+them, and the Stylist suggests what to wear with the clothes you actually own.</p>
+
+<div class="scheda">
+<h2>Write to us</h2>
+<p>For any problem or question: <a href="mailto:myticketapp@libero.it">myticketapp@libero.it</a>.
+A person answers, not an automated system.</p>
+</div>
+
+<h2>Subscription</h2>
+<p>Subscriptions and payments are handled by Apple. To cancel or change plan, open
+<strong>Settings → your name → Subscriptions</strong> on your iPhone, or follow
+<a href="https://support.apple.com/en-us/118428">Apple's guide</a>.
+Your subscription is tied to your account: on a new phone, just sign in with Apple.
+If it does not show as active, open Profile → Discover Premium → <em>Restore purchases</em> in MyWardrobe.</p>
+
+<h2>Your data</h2>
+<p>From Profile → Privacy and data you can export everything you have catalogued, or
+delete your account. Deleting your account <strong>does not cancel your subscription</strong>:
+cancel it from your Apple settings.</p>
+<p><a href="/mywardrobe-app/privacy/en/">Privacy Policy</a></p>
+
+<footer>MyWardrobe</footer>
+</main>
+</body>
+</html>
