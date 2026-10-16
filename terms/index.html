@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Termini del servizio — MyWardrobe</title>
+<style>
+:root {
+  --sfondo: #F6F3EE; --superficie: #FFFFFF; --alternativo: #EAE3D6;
+  --separatore: #D9D3C4; --testo: #1B1B1B; --secondario: #6E6759;
+  --accento: #5C6F55; --tortora: #6B5343;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sfondo: #14130F; --superficie: #1F1D18; --alternativo: #2A2720;
+    --separatore: #39352C; --testo: #F6F3EE; --secondario: #A8A192;
+    --accento: #A7B79E; --tortora: #A98D77;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--sfondo); color: var(--testo);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+h1, h2 { font-family: ui-serif, "New York", Georgia, serif; font-weight: 500; line-height: 1.2; }
+h1 { font-size: 2.1rem; margin: 0 0 8px; }
+h2 { font-size: 1.35rem; margin: 40px 0 12px; }
+p, li { color: var(--testo); }
+a { color: var(--accento); }
+strong { font-weight: 600; }
+.marchio { display: flex; align-items: center; gap: 10px; color: var(--secondario);
+  font-size: .95rem; letter-spacing: .02em; margin-bottom: 28px; text-decoration: none; }
+.marchio b { font-family: ui-serif, "New York", Georgia, serif; font-weight: 500;
+  color: var(--testo); font-size: 1.2rem; }
+.lingue { float: right; font-size: .9rem; }
+.tabella { overflow-x: auto; margin: 16px 0; border: 1px solid var(--separatore);
+  border-radius: 12px; background: var(--superficie); }
+table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: .95rem; }
+th, td { text-align: left; vertical-align: top; padding: 10px 14px;
+  border-bottom: 1px solid var(--separatore); }
+tr:last-child td { border-bottom: none; }
+th { background: var(--alternativo); color: var(--secondario); font-weight: 600; font-size: .85rem; }
+.scheda { background: var(--superficie); border: 1px solid var(--separatore);
+  border-radius: 14px; padding: 20px 22px; margin: 16px 0; }
+.scheda h2 { margin-top: 0; }
+/* Sotto i 560 pixel la tabella diventa una pila di schede: in orizzontale la
+   terza colonna finiva oltre il bordo, e in una pagina legale nessuno scorre
+   di lato per cercarla. */
+@media (max-width: 560px) {
+  .tabella { border: none; background: none; overflow: visible; }
+  table { min-width: 0; }
+  thead { display: none; }
+  tr { display: block; background: var(--superficie); border: 1px solid var(--separatore);
+    border-radius: 12px; padding: 6px 0; margin-bottom: 12px; }
+  td { display: block; border: none; padding: 6px 16px; }
+  td::before { content: attr(data-etichetta); display: block; font-size: .78rem;
+    font-weight: 600; color: var(--secondario); text-transform: uppercase; letter-spacing: .04em; }
+  td:first-child { font-weight: 600; }
+}
+footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--separatore);
+  color: var(--secondario); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+<a class="lingue" href="/mywardrobe-app/terms/en/" hreflang="en">English</a>
+<a class="marchio" href="/mywardrobe-app/"><b>MyWardrobe</b></a>
+<h1>Termini del servizio — MyWardrobe</h1>
+<p><strong>Versione 1 · in vigore dal 16 ottobre 2026</strong></p>
+<p>Questi termini regolano l'uso di MyWardrobe. Li accetti al primo accesso all'app; senza accettarli l'app non si può usare. Si aggiungono al <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Contratto di licenza standard di Apple</a>, che vale per tutte le app scaricate dall'App Store.</p>
+<h2>1. Chi fornisce il servizio</h2>
+<p>MyWardrobe è sviluppata e gestita da Emanuele Piersanti, che in questi termini chiamiamo "noi". Per qualunque domanda puoi scrivere a <a href="mailto:myticketapp@libero.it">myticketapp@libero.it</a>.</p>
+<h2>2. Il tuo account</h2>
+<p>Accedi con Apple. L'account è personale: non va condiviso né ceduto. Per usare MyWardrobe devi avere almeno 14 anni.</p>
+<p>Puoi eliminare l'account quando vuoi, da Profilo → Privacy e dati. Eliminare l'account <strong>non annulla l'abbonamento</strong>: l'addebito lo gestisce Apple, e va annullato dalle impostazioni del tuo account Apple.</p>
+<h2>3. Cosa offre MyWardrobe</h2>
+<ul><li><strong>Piano gratuito</strong>: catalogo fino a 20 capi, con il riconoscimento automatico incluso.</li><li><strong>Premium</strong>: guardaroba senza limite, Stylist, Valigia e Insights. Si paga con un abbonamento mensile o annuale. Il mensile può includere una prova gratuita di 7 giorni.</li><li><strong>Credito</strong>: chi ha Premium può acquistare credito in più, che si aggiunge a quello incluso nell'abbonamento.</li></ul>
+<p>Le funzioni che usano l'intelligenza artificiale hanno un <strong>credito mensile incluso</strong>: serve a mantenere sostenibile il servizio per tutti. Quanto ne hai usato e quanto ne resta lo vedi sempre nel Profilo. Quando finisce puoi aggiungerne, oppure aspettare il mese successivo; il resto dell'app continua a funzionare.</p>
+<h2>4. Pagamenti e rinnovi</h2>
+<p>Tutti i pagamenti passano da Apple: noi non vediamo mai i tuoi dati di pagamento. L'abbonamento si rinnova automaticamente allo stesso prezzo e per lo stesso periodo, a meno che non lo annulli almeno 24 ore prima della scadenza. Lo gestisci e lo annulli dalle impostazioni del tuo account Apple. Rimborsi e diritto di recesso seguono le regole di Apple, che ti restano comunque garantite.</p>
+<h2>5. I consigli dello Stylist</h2>
+<p>Proposte di outfit, liste per la valigia e consigli d'acquisto sono generati in modo automatico a partire dai capi che hai catalogato. Sono <strong>suggerimenti</strong>, non garanzie: possono contenere errori, e la scelta di cosa indossare o comprare resta tua.</p>
+<h2>6. Se il servizio dovesse interrompersi</h2>
+<p>MyWardrobe è un servizio indipendente, e <strong>potrebbe essere interrotto</strong> in futuro: per esempio se non fosse più sostenibile, per motivi tecnici o per cambiamenti nelle regole che lo riguardano. Se dovessimo decidere di interromperlo, ci impegniamo a farlo così:</p>
+<ol><li><strong>Te lo diremo in anticipo</strong>, con un avviso nell'app e sul sito di supporto, almeno 30 giorni prima che cambi qualcosa per te.</li><li><strong>Dal giorno dell'annuncio non si potrà più abbonarsi né acquistare credito</strong>, e gli abbonamenti in corso <strong>non si rinnoveranno più</strong>. Non ti verrà addebitato nessun nuovo periodo.</li><li><strong>Userai tutte le funzioni che hai pagato fino all'ultimo giorno del periodo già pagato.</strong> Se hai un abbonamento annuale, il servizio resta attivo per te fino alla sua scadenza naturale. Non ti chiederemo di rinunciare a niente di quello che hai già comprato.</li><li><strong>Il credito acquistato</strong> resta utilizzabile fino alla chiusura definitiva. Se a quella data te ne resta di non usato, puoi chiederne il rimborso ad Apple da <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</li><li><strong>I tuoi dati restano tuoi.</strong> Fino alla chiusura definitiva potrai esportarli dall'app. Dopo la chiusura li cancelliamo entro 30 giorni.</li></ol>
+<p>Le funzioni gratuite possono essere interrotte con lo stesso preavviso.</p>
+<h2>7. Modifiche al servizio e a questi termini</h2>
+<p>L'app cambia nel tempo: possiamo aggiungere, migliorare o togliere funzioni. Se una modifica riducesse in modo sostanziale quello che hai già pagato, vale quanto scritto al punto 6.</p>
+<p>Se cambiamo questi termini in modo sostanziale ti chiederemo di accettarli di nuovo nell'app; finché non li accetti valgono quelli che hai accettato, e puoi sempre smettere di usare MyWardrobe e annullare l'abbonamento.</p>
+<h2>8. Le tue fotografie e i tuoi dati</h2>
+<p>Le fotografie e le informazioni che inserisci restano <strong>tue</strong>. Ci autorizzi soltanto a conservarle ed elaborarle per farti funzionare l'app: riconoscere i capi, proporti outfit e valigie. Non le usiamo per nient'altro e non le cediamo a nessuno. I dettagli sono nell'<a href="https://capitano1981.github.io/mywardrobe-app/privacy/">informativa sulla privacy</a>.</p>
+<p>Non caricare contenuti illegali, né fotografie di altre persone senza il loro consenso.</p>
+<h2>9. Responsabilità</h2>
+<p>Facciamo il possibile perché MyWardrobe funzioni bene e sia sempre disponibile, ma non possiamo garantire che sia priva di errori o di interruzioni momentanee. Nei limiti consentiti dalla legge non rispondiamo di danni indiretti derivanti dall'uso dell'app. <strong>Niente in questi termini limita i diritti che la legge riconosce ai consumatori</strong>, compresi quelli del Codice del Consumo.</p>
+<h2>10. Legge applicabile</h2>
+<p>Questi termini sono regolati dalla legge italiana. Se sei un consumatore, per qualunque controversia è competente il giudice del luogo in cui risiedi.</p>
+<footer>MyWardrobe</footer>
+</main>
+</body>
+</html>

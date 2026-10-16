@@ -9,4 +9,6 @@ inglese: lì vive il testo, qui solo la sua forma pubblicata.
 
 - Informativa: https://capitano1981.github.io/mywardrobe-app/privacy/
 - Privacy Policy (English): https://capitano1981.github.io/mywardrobe-app/privacy/en/
+- Termini del servizio: https://capitano1981.github.io/mywardrobe-app/terms/
+- Terms of Service (English): https://capitano1981.github.io/mywardrobe-app/terms/en/
 - Supporto: https://capitano1981.github.io/mywardrobe-app/support/
